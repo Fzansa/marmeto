@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* start header style */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+.logo {
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41.45px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #000000;
+}
+
+.logo img {
+  width: 50px;
+  height: 32px;
+}
+
+.menuContainer a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  margin: auto 30px;
+}
+
+.rightMenu span {
+  width: 28px;
+  height: 28px;
+  padding: 3.55px 1.8px 2.39px 1.67px;
+  margin: auto 14px;
+  cursor: pointer;
+}
+
+.rightMenu span i {
+  color: #000000;
+}
+
+/* end header */
+
+/* start banner */
+
+.bannerSection {
+  text-align: center;
+  background-image: url(../images/header-img.png);
+  width: 100%;
+  height: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerSection h3 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.breadcrumb {
+  list-style: none;
+  display: inline-flex;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.breadcrumb li {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li + li::before {
+  content: "\f054";
+  font-family: fontawesome;
+  margin: 0 10px;
+  color: #000000;
+  font-size: 14px;
+}
+
+.breadcrumb li a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrumb .active a {
+  font-weight: 300;
+  pointer-events: none;
+}
+
+/* end banner section */
+
+/* start main cart area style */
+.mainCartSection {
+  padding: 60px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.itemsContainer {
+  width: calc(100% - 393px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 12px;
+  color: #000000;
+  text-align: left;
+  background-color: #f9f1e7;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+tbody tr td {
+  padding: 32px 0px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #9f9f9f;
+}
+
+td.dark {
+  color: #000000;
+}
+
+td > input {
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  /* background:red; */
+  border: 1px solid #000000;
+  outline: none;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+td > i.fa-trash {
+  color: #b88e2f;
+  cursor: pointer;
+}
+
+.totalContainer {
+  background-color: #f9f1e7;
+  width: 393px;
+  height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.totalContainer > h3 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+}
+
+.amountInfo {
+  margin: 32px auto;
+}
+
+.subTotal {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 24px auto;
+}
+
+.subTotal .amount {
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.subTotal .totalAmount {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #b88e2f;
+}
+
+.checkOutBtn {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  padding: 12px 52px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* end main cart design */
+
+/* styling feature section */
+.featureSection {
+  background: #faf3ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.featureContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: start;
+  gap: 6px;
+}
+
+.featureImg {
+  width: 60px;
+  height: 60px;
+}
+
+.featureImg > img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.featureInfo > h3 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25.5px;
+  text-align: left;
+}
+
+.featureInfo > p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #898989;
+}

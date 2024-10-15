@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marmeto - Coding Assesment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Marmeto logo" />
+        <span>Marmeto</span>
+      </div>
+      <div class="menuContainer">
+        <a href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">Shop</a>
+        <a href="javascript:void(0)">About</a>
+        <a href="javascript:void(0)">Contact</a>
+      </div>
+      <div class="rightMenu">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span><i class="fa-regular fa-heart"></i></span>
+        <span><i class="fa-solid fa-cart-shopping"></i></span>
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- start banner section -->
+    <section class="bannerSection">
+      <img
+        src="assets/images/logo2.png"
+        alt="marmeto logo"
+        class="logoInBanner"
+      />
+      <h3>Cart</h3>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li class="active"><a href="javascript:void(0)">Cart</a></li>
+        </ol>
+      </nav>
+    </section>
+    <!-- end banner section -->
+    <!-- start main cart section -->
+    <section class="mainCartSection">
+      <div class="itemsContainer">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="assets/images/item.png" alt="" /></td>
+              <td>Asgaard sofa</td>
+              <td>Rs. 250,000.00</td>
+              <td><input type="number" value="1" /></td>
+              <td class="dark" >Rs. 250,000.00</td>
+              <td ><i class="fa-solid fa-trash"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="totalContainer">
+        <h3>Cart Totals</h3>
+        <div class="amountInfo">
+          <div class="subTotal">
+            <span>Subtotal</span>
+            <span class="amount">Rs. 250,000.00</span>
+          </div>
+
+          <div class="subTotal">
+            <span>Total</span>
+            <span class="totalAmount">Rs. 250,000.00</span>
+          </div>
+        </div>
+
+        <button class="checkOutBtn">Check Out</button>
+      </div>
+    </section>
+    <!-- end main cart section -->
+    <!-- start feature section -->
+    <section class="featureSection">
+      <div class="featureContainer">
+        <div class="featureItem">
+          <div class="featureImg">
+            <img src="assets/images/trophy.png" alt="" />
+          </div>
+          <div class="featureInfo">
+            <h3>High Quality</h3>
+            <p>crafted from top material</p>
+          </div>
+        </div>
+        <div class="featureItem">
+          <div class="featureImg">
+            <img src="assets/images/guarantee.png" alt="" />
+          </div>
+          <div class="featureInfo">
+            <h3>Warranty Protection</h3>
+            <p>over 2 years</p>
+          </div>
+        </div>
+        <div class="featureItem">
+          <div class="featureImg">
+            <img src="assets/images/shipping.png" alt="" />
+          </div>
+          <div class="featureInfo">
+            <h3>Free Shipping</h3>
+            <p>order above 150$</p>
+          </div>
+        </div>
+        <div class="featureItem">
+          <div class="featureImg">
+            <img src="assets/images/customer-support.png" alt="" />
+          </div>
+          <div class="featureInfo">
+            <h3>24/7 Support</h3>
+            <p>Decdicated Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end feature section -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
