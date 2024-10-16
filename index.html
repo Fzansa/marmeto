@@ -14,16 +14,18 @@
     <!-- START HEADER -->
     <header class="header">
       <div class="logo">
-        <span class="menuIcon" onclick="openMenu()" >
+        <span class="menuIcon" onclick="openMenu()">
           <i class="fa-solid fa-bars"></i>
         </span>
         <img src="assets/images/logo.png" alt="Marmeto logo" />
         <span>Marmeto</span>
       </div>
       <div class="menuContainer">
-        <span class="close" onclick="openMenu()"><i class="fa-regular fa-circle-xmark"></i></span>
-        <div class="menuList" >
-          <a href="javascript:void(0)" class="active" >Home</a>
+        <span class="close" onclick="openMenu()"
+          ><i class="fa-regular fa-circle-xmark"></i
+        ></span>
+        <div class="menuList">
+          <a href="javascript:void(0)" class="active">Home</a>
           <a href="javascript:void(0)">Shop</a>
           <a href="javascript:void(0)">About</a>
           <a href="javascript:void(0)">Contact</a>
@@ -66,40 +68,7 @@
               <th></th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td><img src="assets/images/item.png" alt="" /></td>
-              <td>Asgaard sofa</td>
-              <td>Rs. 250,000.00</td>
-              <td><input type="number" value="1" /></td>
-              <td class="dark">Rs. 250,000.00</td>
-              <td><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td><img src="assets/images/item.png" alt="" /></td>
-              <td>Asgaard sofa</td>
-              <td>Rs. 250,000.00</td>
-              <td><input type="number" value="1" /></td>
-              <td class="dark">Rs. 250,000.00</td>
-              <td><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td><img src="assets/images/item.png" alt="" /></td>
-              <td>Asgaard sofa</td>
-              <td>Rs. 250,000.00</td>
-              <td><input type="number" value="1" /></td>
-              <td class="dark">Rs. 250,000.00</td>
-              <td><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td><img src="assets/images/item.png" alt="" /></td>
-              <td>Asgaard sofa</td>
-              <td>Rs. 250,000.00</td>
-              <td><input type="number" value="1" /></td>
-              <td class="dark">Rs. 250,000.00</td>
-              <td><i class="fa-solid fa-trash"></i></td>
-            </tr>
-          </tbody>
+          <tbody id="cart-items"></tbody>
         </table>
       </div>
       <div class="totalContainer">
@@ -107,12 +76,12 @@
         <div class="amountInfo">
           <div class="subTotal">
             <span>Subtotal</span>
-            <span class="amount">Rs. 250,000.00</span>
+            <span class="amount" id="subAmount" onclick="ddd()">Rs. 250,000.00</span>
           </div>
 
           <div class="subTotal">
             <span>Total</span>
-            <span class="totalAmount">Rs. 250,000.00</span>
+            <span class="totalAmount" id="totalAmount">Rs. 250,000.00</span>
           </div>
         </div>
 
