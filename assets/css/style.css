@@ -37,6 +37,10 @@ input[type="number"] {
   color: #000000;
 }
 
+.menuIcon {
+  display: none;
+}
+
 .logo img {
   width: 50px;
   height: 32px;
@@ -63,6 +67,10 @@ input[type="number"] {
 
 .rightMenu span i {
   color: #000000;
+}
+
+.close {
+  display: none;
 }
 
 /* end header */
@@ -153,7 +161,7 @@ th {
 }
 
 tbody tr td {
-  padding: 32px 0px;
+  padding-top: 32px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -171,7 +179,7 @@ td > input {
   width: 32px;
   height: 32px;
   text-align: center;
-  /* background:red; */
+  margin: auto;
   border: 1px solid #000000;
   outline: none;
   padding: 2px;
@@ -252,7 +260,7 @@ td > i.fa-trash {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0px;
+  padding: 50px 30px;
 }
 
 .featureContainer {
@@ -291,7 +299,207 @@ td > i.fa-trash {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 18px;
   text-align: left;
   color: #898989;
+}
+
+/* end feature section style */
+
+/* making responsive */
+@media (max-width: 1130px) {
+  .mainCartSection {
+    padding: 60px 30px;
+  }
+  .itemsContainer {
+    width: calc(100% - 330px);
+  }
+  .totalContainer {
+    width: 330px;
+  }
+  td img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mainCartSection {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .itemsContainer {
+    width: 100%;
+  }
+  .totalContainer {
+    margin-left: auto;
+  }
+  .featureInfo > h3 {
+    font-size: 18px;
+  }
+
+  .featureInfo > p {
+    font-size: 14px;
+  }
+  .featureImg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menuContainer a {
+    margin: auto 20px;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  .logo img {
+    width: 46px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menuContainer {
+    background-color: white;
+    box-shadow: 5px 6px 12px rgba(223, 220, 220, 0.349);
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    transition: all 0.5s linear;
+    height: 100vh;
+  }
+
+  .close {
+    display: block;
+  }
+
+  .menuContainer .menuList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .menuContainer.open {
+    width: 250px;
+    padding: 30px;
+    left: 0;
+  }
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .menuContainer a {
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .menuIcon {
+    display: block;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+
+  td img {
+    width: 50px;
+  }
+
+  .bannerSection {
+    height: unset;
+    padding: 30px;
+  }
+  .featureContainer {
+    gap: 14px;
+  }
+  .featureInfo > h3 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .featureInfo > p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .featureImg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 677px) {
+  .mainCartSection {
+    padding: 20px;
+  }
+  tbody tr td {
+    padding: 22px 3px;
+    font-size: 14px;
+  }
+  th {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .featureContainer {
+    flex-wrap: wrap;
+  }
+  .featureItem {
+    width: 47%;
+  }
+}
+
+@media (max-width: 525px) {
+  tbody tr td,
+  th {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  td > input {
+    width: 25px;
+    height: 25px;
+    font-size: 11px;
+  }
+  td img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 475px) {
+  .logo {
+    font-size: 22px;
+  }
+  .logo img {
+    width: 34px;
+    height: 19px;
+  }
+  .rightMenu span {
+    margin: 0px;
+    margin-right: 14px;
+  }
+  .header {
+    padding: 12px;
+  }
+  .menuIcon {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .mainCartSection {
+    padding: 15px 0px;
+  }
+  td img {
+    width: 30px;
+  }
+  tbody tr td,
+  th {
+    padding: 10px 5px;
+  }
+  .featureSection {
+    padding: 30px 10px;
+  }
 }
